@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(to top, #f2f6f8 0%, #8ab3c6 80%);
+    /* background: linear-gradient(100.6deg, rgb(0, 0, 0) 3%, rgb(11, 132, 145) 97%); */
+    /* background-image: url('../Images/coolbg.png'); */
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    margin: 0 auto;
+    padding: 30px;
+    min-height: 703px;
+}
+
+.error-msg {
+    margin-top: -15px;
+    margin-left: 20px;
+    color: #aaa;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    gap: 20px;
+}
+.search-input, .search-button {
+    outline: none;
+    border: none;
+}
+.search-input {
+    width: 80%;
+    background: linear-gradient(135deg, #ccd5e1 0%, #a7b7d1 100%);
+    padding: 7px 18px;
+    border-radius: 25px;
+    font-weight: 300;
+    font-size: 18px;
+}
+.search-button {
+    background: linear-gradient(135deg, #b0bccf 30%, #9bafd1 70%);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-icon {
+    height: 27px;
+    width: 27px;
+    float: center;
+}
+
+.card-body {
+    /* margin: 20px 0; */
+    text-align: center;
+}
+
+.temperature, .weather-status {
+    display: inline-block;
+    color: #c4c4c4;
+    margin: 0 10px;
+}
+
+.temperature {
+    font-size: 4.7rem;
+    font-weight: 300;
+}
+.weather-status {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 200;
+}
+.weather-icon {
+    width: 33%;
+    margin: 0 100px;
+}
+
+.city {
+    font-size: 2.6rem;
+    color: #737f86;
+    font-weight: 200;
+}
+
+.weather-details {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 45px;
+    color: #808080;
+}
+.wind {
+    margin-top: -20px;
+}
+.wind-icon {
+    width: 80px;
+}
+.humidity h2, .wind h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+@media (max-width: 550px) {
+    .card {
+        width: 90%;
+    }
+    .city {
+        font-size: 2rem;
+    }
+    .weather-details {
+        margin-top: 60px;
+        padding: 10px 22px;
+    }
+    .temperature {
+        font-size: 4rem;
+    }
+}
