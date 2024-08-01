@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+:root {
+    --peach: #ebc5aa;
+    --red: #ad1c1cd6;
+    --blue: #00b7ff;
+    --orange:  #fda016;
+    --light: #ddfae0;
+    --black: #181818;
+}
+
+body {
+    background-color: #000;
+}
+
+.clock-dial {
+    height: 480px;
+    width: 480px;
+    border-radius: 50%;
+    position: relative;
+    background-color: var(--black);
+    box-shadow: rgba(255, 255, 255, 0.30) 0px 10px 36px 0px, rgba(255, 255, 255, 0.26) 0px 0px 0px 1px;
+    background-size: cover;
+    background-position: center;
+    margin: 80px auto;
+    border: 0.5rem solid var(--black);
+}
+
+.digit {
+    color: var(--light);
+    font-size: 3rem;
+    position: absolute;
+}
+
+
+#digit-1 {
+    top: 35px;
+    right: 110px;
+}
+
+#digit-2 {
+    top: 110px;
+    right: 35px;
+}
+
+#digit-3 {
+    top: 210px;
+    right: 10px;
+}
+
+#digit-4 {
+    bottom: 110px;
+    right: 35px;
+}
+
+#digit-5 {
+    bottom: 35px;
+    right: 110px;
+}
+
+#digit-6 {
+    bottom: 0px;
+    left: 230px;
+}
+
+#digit-7 {
+    bottom: 35px;
+    left: 110px;
+}
+
+#digit-8 {
+    bottom: 110px;
+    left: 35px;
+}
+
+#digit-9{
+    top: 210px;
+    left: 10px;
+}
+#digit-10 {
+    top: 110px;
+    left: 35px;
+}
+
+#digit-11 {
+    top: 35px;
+    left: 110px;
+}
+
+#digit-12 {
+    top: 0px;
+    left: 210px;
+} 
+
+.center {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--light);
+    z-index: 10;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, 0%);
+    transform-origin: bottom;
+}
+
+#hour-hand {
+    height: 100px;
+    width: 8px;
+    background-color: var(--orange);
+}
+
+#minute-hand {
+    height: 140px;
+    width: 5px;
+    background-color: var(--blue);
+}
+
+#second-hand {
+    height: 180px;
+    width: 1.5px;
+    background-color: var(--red);
+}
+
+.center-object {
+    position: absolute;
+    border-radius: 50%;
+    inset: 70px;
+    background-color: var(--black);
+    box-shadow: 0 0 30px #000;
+}
