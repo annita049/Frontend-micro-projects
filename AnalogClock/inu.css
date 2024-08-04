@@ -96,14 +96,15 @@ body {
     left: 210px;
 } 
 
-.center {
+.clock-dial::before {
+    content: '';
     height: 15px;
     width: 15px;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-color: var(--light);
     z-index: 10;
 }
@@ -120,19 +121,19 @@ body {
 #hour-hand {
     height: 100px;
     width: 8px;
-    background-color: var(--orange);
+    background-color: var(--light);
 }
 
 #minute-hand {
     height: 140px;
     width: 5px;
-    background-color: var(--blue);
+    background-color: var(--light);
 }
 
 #second-hand {
     height: 180px;
     width: 1.5px;
-    background-color: var(--red);
+    background-color: var(--orange);
 }
 
 .center-object {
